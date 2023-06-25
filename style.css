@@ -7,14 +7,66 @@
 }
 
 .box{
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 100px 50px;
 }
 .box h1{
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
+
+.box label{
+    margin-bottom: 10px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+.min{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.min button{
+    width: 30%;
+}
+
+
+.button {
+    border: none;
+    background: dodgerblue;
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+  }
+  
+  .button svg {
+    transform: rotate(180deg);
+    transition: all .5s;
+  }
+  
+  .button__circle {
+    padding: 10px 0;
+    background: mediumseagreen;
+    border-radius: 10px;
+    transform: rotate(-180deg);
+  }
+  
+  .button:hover {
+    cursor: pointer;
+  }
+  
+  .tick {
+    color: white;
+    font-size: 2em;
+    transition: all .9s;
+  }
