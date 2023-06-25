@@ -41,32 +41,3 @@
     width: 30%;
 }
 
-
-.button {
-    border: none;
-    background: dodgerblue;
-    border-radius: 6px;
-    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-  }
-  
-  .button svg {
-    transform: rotate(180deg);
-    transition: all .5s;
-  }
-  
-  .button__circle {
-    padding: 10px 0;
-    background: mediumseagreen;
-    border-radius: 10px;
-    transform: rotate(-180deg);
-  }
-  
-  .button:hover {
-    cursor: pointer;
-  }
-  
-  .tick {
-    color: white;
-    font-size: 2em;
-    transition: all .9s;
-  }
