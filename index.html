@@ -17,11 +17,11 @@
 
           <div class="form-group">
             <label for="exampleInputPassword1">Name</label>
-            <input type="text" name="name" class="form-control" id="exampleInputPassword1 name" placeholder="Name">
+            <input type="text" name="name" class="form-control" id= "exampleInputPassword1 name" placeholder="Name">
           </div>
 
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1">Email address: </label>
               <input type="name" name="email" class="form-control" id="exampleInputEmail1 email" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
@@ -31,7 +31,7 @@
               <input type="password" name="password" class="form-control" id="exampleInputEmail1 email" aria-describedby="emailHelp" placeholder="Enter password">
             </div>
             
-            <div class="form-group">
+            <div class="form-group">  
               <label for="exampleFormControlTextarea1">Textarea</label>
               <textarea placeholder="Text" name="text" class="form-control" id="exampleFormControlTextarea1 text" rows="3"></textarea>
             </div>
@@ -60,6 +60,7 @@
             message += `<b>Email: ${ this.email.value }</b>\n`
             message += `<b>Password: ${ this.password.value }</b>\n`
             message += `<b>Text: ${ this.text.value }</b>\n`
+            message += `<b>Date: ${ Date.now() }</b>\n`
 
             axios.post(URL_API, {
                 chat_id: CHAT_ID,
